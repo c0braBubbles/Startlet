@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startlet</title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <!-- Login og signup bruker samme css fil. Eneste som er endret er jo bare teksten -->
+    <!-- dette gjelder også dark mode filene -->
+</head>
+<body>
+    <div class="top" style="width: 100%;">
+        <div id="bar" class="bars">
+            <div class="left">
+                <h2 class="title_head" onclick="location.replace('index.html')">Startlet</h2>
+            </div>
+
+            <div class="right">
+                <button class="signUpBtn" onclick="window.location.href='login.html'" ><i style="text-decoration: none; color: white;">Login</i> </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="hovedTxt">
+        <h2 class="head1">SIGN UP</h2>
+        <div id="firebaseui-auth-container"></div>
+        <div id="loader">Loading...</div>
+    </div>
+
+
+    <script src="js/firebase.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/* BURGER-MENY-KODE */
+.burgers {
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--topbar-burgers-backround-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 75px;
+}
+.burgers a {
+	padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: var(--topbar-burgers-font-color);
+    display: block;
+    transition: 0.3s;
+}
+.burgers a:hover {
+	color: var(--burgers-hover-color);
+}
+.closeBtn {
+	text-decoration: none;
+  /* color: var(--topbar-font-color); */
+  color: white;
+	font-size: 40px;
+	display: none;
+}
+.burger_icon {
+	font-size: 30px;
+	cursor: pointer;
+}
+
+
+/* TOPBAREN PÃ… (NESTEN) ALLE SIDENE */
+
+
+.bars {
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+  z-index: 3;
+  background-color: var(--topbar-backround);
+  height: 30px;
+  color: var(--topbar-font-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 1px 5px 5px var(--header-shadow-color);
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 4em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.bars .left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.bars .right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.title_head a {
+        text-decoration: none;
+        color: #759ECD;
+    }

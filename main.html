@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startlet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/action.js" defer></script>
+</head>
+<body>
+    <div class="top" style="width: 100%;">
+        <div id="bar" class="bars">
+            <div class="left">
+                <h2 class="title_head" onclick="location.replace('main.html')">Startlet</h2>
+            </div>
+            
+            <div class="right">
+                <span id="burgerIkon" class="burger_icon" onclick="openBurger()">&#9776;</span>
+                <a href="javascript:void(0)" id="lukkeMuskelaturen" class="closeBtn" onclick="closeburger()">&times;</a>
+            </div>
+        </div>
+        
+        
+        <div id="burgers" class="burgers">
+            <a href="about.html">About</a>
+            <a href="articlelist.html">Article list</a>
+            <a href="toollist.html">Tool list</a>
+            <a href="help.html">Help</a>
+            <a href="settings.html">Settings</a>
+        </div>
+    </div>
+
+
+    <div class="center">
+        <a class="whitebtn" href="#" style="border: 2px solid black; color: black;">Startup quizzes</a>
+        <br><br><br>
+        <div class="row1">
+            <div class="quiz_box" onclick="location.replace('quiz.html')" style="background-color: #85A8BA;">
+                <!-- <a href="quiz.html" style="text-decoration: none; color: white;">The start-up quiz</a> -->
+                The startup quiz
+                <span class="tooltip">Check if you got what it takes to run a startup company</span>
+            </div>
+            <div class="quiz_box" style="background-color: #96B6C5;">No quiz avaliable</div>
+            <div class="quiz_box" style="background-color: #EEE0C9;">No quiz avaliable</div>
+            <div class="quiz_box" style="background-color: #E4DECB;">No quiz avaliable</div>
+        </div>
+        <br><br><br>
+
+        <a class="whitebtn" href="#" style="border: 2px solid black; color: black;">Flashcard practice</a>
+        <br><br><br>
+        <div class="row1">
+            <div class="quiz_box" style="background-color: #FF985A;">No flashcard avaliable</div>
+            <div class="quiz_box" style="background-color: #FFB347;">No flashcard avaliable</div>
+            <div class="quiz_box" style="background-color: #9FC0DE;">No flashcard avaliable</div>
+            <div class="quiz_box" style="background-color: #F2C894;">No flashcard avaliable</div>
+        </div>
+    </div>
+
+
+    <div class="foot">
+        <div class="left" onclick="location.replace('about.html')">
+            About
+        </div>
+
+        <div class="middle">
+            <div class="middle2">
+                <a href="" class="fa fa-facebook"></a>
+                <a href="" class="fa fa-instagram"></a>
+                <a href="" class="fa fa-twitter"></a>
+            </div>
+            <p class="cc">Copyright © 2020, STARTLET All Rights Reserved. </p>
+        </div>
+
+        <div class="right" onclick="location.replace('Help.html')">
+            Help
+        </div>
+    </div>
+    
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

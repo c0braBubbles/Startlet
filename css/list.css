@@ -1,0 +1,49 @@
+
+
+.box{
+    color: var(--button-font-color);
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.innhold2{
+    margin-top: 5px;
+    color: var(--button-font-color);
+    flex: 2;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 115px;
+}
+
+.innhold3{
+    margin-top: 5px;
+    color: var(--button-font-color);
+    flex: 2;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 115px;
+}
+    
+
+.artclbtn{
+    margin-top: 10px;
+    background-color: var(--header-backround);
+    border-radius: 10px;
+    box-shadow:5px 1px lightgray ;
+    color: var(--button-font-color); /* White text */
+    padding: 10px 10px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 65%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+}

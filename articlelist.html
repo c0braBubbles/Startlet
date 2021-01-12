@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/topBar.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Article list</title>
+
+    <script src="js/action.js" defer></script>
+    <script src="js/darkMode.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="top" style="width: 100%;">
+            <div id="bar" class="bars">
+                <div class="left">
+                    <h2 class="title_head" onclick="window.location.href='main.html'">Startlet</h2>
+                </div>
+                <div class="right">
+                    <span id="burgerIkon" class="burger_icon" onclick="openBurger()">&#9776;</span>
+                    <a href="javascript:void(0)" id="lukkeMuskelaturen" class="closeBtn"
+                        onclick="closeburger()">&times;</a>
+                </div>
+            </div>
+
+            <div id="burgers" class="burgers">
+                <a href="about.html">About</a>
+                <a href="articlelist.html">Article list</a>
+                <a href="toollist.html">Tool list</a>
+                <a href="help.html">Help</a>
+                <a href="settings.html">Settings</a>
+            </div>
+        </div>
+
+        <!-- Specefic header -->
+        <div class="header_help">
+            <i class="header_heading">Article list</i>
+            <p class="header_text">
+                List of articles for you,
+                <br> where you learn
+                <br> wich articles you should read
+            </p>
+        </div>
+    </header>
+    <!-- <div id="firebaseui-auth-container"></div> -->
+    <div class="box">
+
+        <div class="innhold2" >
+            <article class="artclbtn" onclick="window.open('https://www.cbinsights.com/research/startup-failure-reasons-top/', '_blank')">
+                <a href="https://www.cbinsights.com/research/startup-failure-reasons-top/" target="_blank">
+                    <h3>Why do startups fail?</h3>  
+                </a>
+                <p>From lack of product-market fit to disharmony on the team, we break down the top 20 reasons for startup failure by analyzing 101 startup failure post-mortems.</p>
+            </article>
+            <article class="artclbtn" onclick="window.open('https://softwarefactorynorway.files.wordpress.com/2015/11/06898758-2.pdf','_blank')">
+                <a href="https://softwarefactorynorway.files.wordpress.com/2015/11/06898758-2.pdf" target="_blank">
+                    <h3>What do we know about SE in Startup?</h3>  
+                </a>
+                <p>High uncertainty and rapid evolution are the two key characteristics for startups.</p>
+            </article>
+            <article class="artclbtn" onclick="window.open('https://dl.acm.org/doi/10.1145/2785592.2795368','_blank')">
+                <a href="https://dl.acm.org/doi/10.1145/2785592.2795368" target="_blank">
+                    <h3>Hunters-gatherer model</h3>
+                </a>
+                <p>Software startups are increasingly important in generating innovative products and services that widely impact global economy. However, there is an insufficient research support for their innovation and engineering activities, from both theoretical and empirical perspectives.</p>
+            </article>
+            <article class="artclbtn" onclick="window.open('https://www.forbes.com/sites/forbestechcouncil/2020/01/03/funding-challenges-for-software-startups-and-how-to-solve-them/#7585a5e72d95','_blank')">
+                <a href="https://www.forbes.com/sites/forbestechcouncil/2020/01/03/funding-challenges-for-software-startups-and-how-to-solve-them/#7585a5e72d95" target="_blank">
+                    <h3>Funding challenges for software startups</h3>
+                </a>
+                <p>To solve funding challenges, it's important to discover the financial skills you need to learn as a founder. Setting up an initial business plan will help you get started. This will also give you a good idea of the key performance indicators to track early on.</p>
+            </article>
+            <article class="artclbtn" onclick="window.open('https://www.forbes.com/sites/mnewlands/2017/03/02/how-to-get-funding-for-your-startup/#7c27e2321ccb','_blank')">
+                <a href="https://www.forbes.com/sites/mnewlands/2017/03/02/how-to-get-funding-for-your-startup/#7c27e2321ccb" target="_blank">
+                    <h3>How to get funding for startups?</h3>
+                </a>
+                <p>As a entrepreneur, you are entitled to feel a sense of pride in "going against the tide" and launching a self-driven, innovation-laden startup. That being said, the fact remains that you really cannot expect your venture to take off unless it is adequately funded.</p>
+            </article>
+            <article class="artclbtn" onclick="window.open('https://www.upcounsel.com/startup-valuation-methods','_blank')">
+                <a href="https://www.upcounsel.com/startup-valuation-methods" target="_blank">
+                    <h3>Startup evaluation method</h3>
+                </a>
+                <p>Startup valuation methods are the ways in which a startup business owner can work out the value of their company during the pre-revenue stage of their lifespan.</p>
+            </article>
+        </div>
+    </div>
+
+
+
+    <button id="chat_knp" class="chat_btn">Chat</button>
+
+
+    <!-- <script src="firebase.js"></script> -->
+    <!-- <script src="login.js"></script> -->
+
+
+    <div class="foot">
+        <div class="left" onclick="location.replace('about.html')">
+            About
+        </div>
+
+        <div class="middle">
+            <div class="middle2">
+                <a href="" class="fa fa-facebook"></a>
+                <a href="" class="fa fa-instagram"></a>
+                <a href="" class="fa fa-twitter"></a>
+            </div>
+            <p class="cc">Copyright © 2020, STARTLET All Rights Reserved. </p>
+        </div>
+
+
+        <div class="right" onclick="location.replace('Help.html')">
+            Help
+        </div>
+    </div>
+
+</body>
+
+</html>

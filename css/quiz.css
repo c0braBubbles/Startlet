@@ -1,0 +1,174 @@
+.questionDiv {
+    color: #0070A0;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 70px;
+    width: 60%;
+    height: auto;
+    position: relative;
+    top: 130px;
+    padding: 10px;
+    border: 3px solid #0070A0;
+    border-radius: 0.5rem;
+    font-size: 1.8vw;
+    font-family: "Raleway", sans-serif;
+
+    animation-name: test;
+    animation-duration: 2s;
+}
+@keyframes test {
+    0% {left: 3000px;}
+    100% {left: 0px;}
+}
+
+.question {
+    /*margin: auto;
+    margin-top: auto;
+    padding: 130px; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.awnserDivs {
+    font-family: "Raleway", sans-serif;
+    color: #707070;
+    flex: 2;
+    margin-right: auto;
+    margin-left: auto;
+    /* display: flex; */
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.awnserDivs .awnser {
+    margin: 2em;
+    font-size: 1vw;
+    letter-spacing: 2px;
+    border: 3px solid #3A3A3A;
+    border-radius: 0.5rem;
+    width: 30vw;
+    height: 8vw;
+    /* padding: 5px; */
+    background-color: #E35333;
+}
+.awnserDivs .awnser:hover {
+    background-color: #C73347;
+    transition: 0.2s;
+
+    animation: shake 0.92s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+}
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%, 50%, 70% {
+        transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+        transform: translate3d(2px, 0, 0);
+    }
+}
+
+.indication {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+/*@media only screen and (max-width: 1692px) {
+
+}*/
+
+@media only screen and (max-width: 1024px) {
+    .questionDiv {
+        width: 80%;
+        font-size: 1.4vw;
+    }
+    .awnserDivs .awnser {
+        width: 40vw;
+        height: 13vw;
+        font-size: 1.3vw;
+    }
+}
+
+@media only screen and (max-width: 641px) {
+    .awnserDivs .awnser {
+        width: 60%;
+        height: 10vw;
+    }
+}
+
+
+.loader {  
+    /* margin: 0 auto;    */
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -50px;
+    border: 16px solid lightgray;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+/* FOR SAFARI NETTLESER */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/* 
+                    NB! LES TEKSTEN NEDENFOR HVIS DU IKKE HETER MATS
+                Quiz siden og flashcards siden bruker mye av samme CSS-kodene 
+            så derfor for å kopiere mye kode og legge inn i ny fil, så har jeg bare 
+            brukt samme fil. Koden nedenfor er tingene som er kun for
+                                    flashcards siden
+*/
+.nextFlashDiv {
+    font-family: "Raleway", sans-serif;
+    flex: 1;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+}
+
+.nextBtn {
+    text-align: center;
+    /* border: 5px solid #759ECD; */
+    border-radius: 0.5em;
+    background-color: #759ECD;
+    color: white;
+    border: none;
+    padding: 10px;
+    box-shadow: 2px 4px 5px #666;
+    font-size: 18px;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+}
+.nextBtn:active {
+    background-color: #759ECD;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

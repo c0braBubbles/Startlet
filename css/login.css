@@ -1,0 +1,40 @@
+.signUpBtn {
+    background-color: #759ECD;
+    color: white;
+    border: none;
+    padding: 6px;
+    font-size: 18px;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+    margin: 5px;
+    border: 2px solid #759ECD;
+}
+.logInBtn {
+    background-color: whitesmoke;
+    color: #759ECD;
+    border: 2px solid #759ECD;
+    padding: 6px;
+    font-size: 18px;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+
+
+.hovedTxt {
+    color: #759ECD;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    position: relative;
+    top: 100px;
+    padding: 10px;
+}
+.head1 {font-size: 50px;}
+
+
+@media only screen and (max-width: 1024px) {
+    .signUpBtn {
+        font-size: 13px;
+    }
+    .logInBtn {
+        font-size: 13px;
+    }
+}

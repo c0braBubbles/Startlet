@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<title>Startlet</title>
+		<link rel="stylesheet" href="css/mainStyle.css">
+		<link rel="stylesheet" href="css/aboutStyle.css">
+		<link rel="stylesheet" href="css/topBar.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script src="js/action.js"></script>
+		<script src="js/clicks.js" defer></script>
+		<script src="js/darkMode.js" defer></script>
+	</head>
+	<body>
+		
+		<!--
+			Every place where the "show" class is follwed by space and no more classes, 
+			the space need to be there for the script to work with menus and click events.
+		-->
+
+		<!--General header-->
+		<header>
+			<div class="top" style="width: 100%;">
+				<div id="bar" class="bars">
+					<div class="left">
+						<h2 class="title_head" onclick="window.location.href='index.html'">Startlet</h2>
+					</div>
+					<div class="right">
+						<span id="burgerIkon" class="burger_icon" onclick="openBurger()">&#9776;</span>
+						<a href="javascript:void(0)" id="lukkeMuskelaturen" class="closeBtn" onclick="closeburger()">&times;</a>
+					</div>
+				</div>
+				
+				<div id="burgers" class="burgers">
+					<a href="#">About</a>
+					<a href="articlelist.html">Article list</a>
+					<a href="toollist.html">Tool list</a>
+					<a href="help.html">Help</a>
+					<a href="settings.html">Settings</a>
+				</div>
+			</div>
+
+			<!-- Specefic header -->
+			<div class="header_help">
+				<i class="header_heading">About</i>
+				<p class="header_text"> 
+					Information about us  
+					<br> and 
+					<br> the services we provide
+				</p>
+			</div>
+		</header>
+	<main>
+
+    <!-- Searchbar inside flexbox-->
+    <div class="searchBar">
+      <!--form-->
+	  <form id="result-1" class="click" name="search" oninput="show(this)" onsubmit="return false;">
+			<i class="serchBarText">Need help? </i>
+			<input id="input" required type="search" placeholder=" 🔎 Search..." name="quarry" style="padding-top: 3px">
+      </form> 
+	</div>
+	
+		<!-- Main content inside borderd div with rounded corners -->
+    <div id="main_content">
+		<div id="content1" class="show ">
+			<p> We aim to be a startup adviser application. <br>
+				The goal is to connect advisers with and help startups in a interactive way. 
+				We plan to do this with quizzes and flashcards about startups, a support chat and lists providing tools and articles about startups. 
+				The goal for the CEO or the product owner is to reach out and get access to the product.<p>
+		</div>
+    	<div id="result1" class="show hide" >
+
+			<div id="crossOut_search"><a id=content-1 class="click" onclick="show(this)">&times;</a></div>
+    	</div>
+     	
+    </div>
+	<button id="chat_knp" class="chat_btn">Chat</button>
+	</main>
+	<footer>
+		<div class="foot">
+			<div class="left">
+				<a href="about.html">About</a>
+			</div>
+	
+			<div class="middle">
+				<div class="middle2">
+					<a href="" class="fa fa-facebook"></a>
+					<a href="" class="fa fa-instagram"></a>
+					<a href="" class="fa fa-twitter"></a>
+				</div>
+				<p class="cc">Copyright © 2020, STARTLET All Rights Reserved. </p>
+			</div>
+	
+			<div class="right">
+				<a href="Help.html">Help</a>
+			</div>
+		</div>
+	</footer>
+	
+	</body>
+</html>

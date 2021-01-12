@@ -1,0 +1,18 @@
+.signUpBtn {
+    background-color: #FF5A5A;
+    color: white;
+    border: none;
+    padding: 6px;
+    font-size: 18px;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+}
+.hovedTxt {
+    color: #FF5A5A;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    position: relative;
+    top: 100px;
+    padding: 10px;
+}
+.head1 {font-size: 50px;}

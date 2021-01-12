@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+}
+
+
+.center {
+    position: relative;
+    top: 100px;
+    padding: 10px;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.quiz_box {
+    width: 550px;
+    height: 230px;
+    border: 1px solid #707070;
+    margin-right: 40px;
+    transition: 0.3s;
+
+    /* teksten på boksene */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    font-size: 1.4vw;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+.tooltip {
+    visibility: hidden;
+    width: 600px;
+    height: 50px;
+    background-color: black;
+    text-align: left;
+    border-radius: 6px;
+    color: white;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    line-height: 30px;
+    font-size: 1.2vw;
+}
+
+.quiz_box:hover {
+    width: 600px;
+    height: 280px;
+    transition: 0.5s;
+}
+.quiz_box:hover .tooltip {
+    visibility: visible;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .quiz_box { 
+        height: 130px; 
+        line-height: 100px;
+    }
+    .quiz_box:hover { 
+        height: 150px; 
+        line-height: 100px;
+    }
+}
+@media only screen and (max-width: 641px) {
+    .quiz_box { 
+        height: 60px; 
+        line-height: 50px;
+        margin-bottom: 40px;
+        width: 500px;
+        font-size: 25px;
+    }
+    .quiz_box:hover { 
+        height: 70px; 
+        line-height: 50px;
+    }
+    .row1 {
+        display: flex;
+        flex-direction: column;
+    }
+}

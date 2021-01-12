@@ -1,0 +1,22 @@
+
+#result1 {
+    min-height: 350px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 50px;
+}
+
+#content-1 {
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+#content1 {
+    margin: 50px;
+}
+
+#crossOut_search {
+    display: block;
+    position: relative;
+    float: right;
+}

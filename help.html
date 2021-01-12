@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<title>Startlet</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/mainStyle.css">
+		<link rel="stylesheet" href="css/topBar.css">
+		<script src="js/action.js" defer></script>
+		<script src="js/clicks.js" defer></script>
+		<script src="js/darkMode.js" defer></script>
+	</head>
+	<body>
+		
+		<!--
+			Every place where the "show" class is follwed by space and no more classes, 
+			the space need to be there for the script to work with menus and click events.
+		-->
+
+		<!--General header-->
+		<header>
+			<div class="top" style="width: 100%;">
+				<div id="bar" class="bars">
+					<div class="left">
+						<h2 class="title_head" onclick="window.location.href='index.html'">Startlet</h2>
+					</div>
+					<div class="right">
+						<span id="burgerIkon" class="burger_icon" onclick="openBurger()">&#9776;</span>
+						<a href="javascript:void(0)" id="lukkeMuskelaturen" class="closeBtn" onclick="closeburger()">&times;</a>
+					</div>
+				</div>
+				
+				<div id="burgers" class="burgers">
+					<a href="about.html">About</a>
+					<a href="articlelist.html">Article list</a>
+					<a href="toollist.html">Tool list</a>
+					<a href="help.html">Help</a>
+					<a href="settings.html">Settings</a>
+				</div>
+			</div>
+
+			<!-- Specefic header -->
+			<div class="header_help">
+				<i class="header_heading">Help & Support</i>
+				<p class="header_text"> 
+					Need help and looking for something? 
+					<br> Search our knowledge base, 
+					<br> or browse our FAQ
+				</p>
+			</div>
+		</header>
+	<main>
+
+    <!-- Searchbar inside flexbox-->
+    <div class="searchBar">
+      <!--form-->
+	  <form id="result-3" class="click" name="search" onkeyup="show(this)" onsubmit="return false;">
+			<i class="serchBarText">Need help? </i>
+			<input id="input" required type="search" placeholder=" 🔎 Search..." name="quarry" style="padding-top: 3px">
+      </form>
+	</div>
+	
+    <!-- Buttons for navigation -->
+    <div class="helpMenu-wrapp">
+		  <ul class="helpMenu">
+			     <li><button id="faq-1" class="click" onclick="show(this)">FaQ</button></li>
+			     <li><button id="contact-2" class="click" onclick="show(this)">Contact</button></li>
+		  </ul>
+	</div>
+	
+		<!-- Main content inside borderd div with rounded corners -->
+    <div id="main_content" class="content">
+
+		<!--FaQ-->
+		<div id="faq1" class="show ">
+			<div id="f-1" onclick="show(this)">
+				<em class="icon_wrapper"><i id="icon1" class="icon "></i></em>
+				<h2 class="text_head">Question 1</h2>
+				<p id="f1" class="answere text show hide">Answer 1</p>
+			</div>
+			<div id="f-2" class="border_top" onclick="show(this)">
+				<em class="icon_wrapper"><i id="icon2" class="icon "></i></em>
+				<h2 class="text_head">Question 2</h2>
+				<p id="f2" class="answere text show hide">Answer 2</p>
+			</div>
+			<div id="f-3" class="border_top" onclick="show(this)">
+				<em class="icon_wrapper"><i id="icon3" class="icon "></i></em>
+				<h2 class="text_head">Question 3</h2>
+				<p id="f3" class="answere text show hide">Answer 3</p>
+			</div>
+			<div id="f-4" class="border_top" onclick="show(this)">
+				<em class="icon_wrapper"><i id="icon4" class="icon "></i></em>
+				<h2 class="text_head">Question 4</h2>
+				<p id="f4" class="answere text show hide">Answer 4</p>
+			</div>
+		</div>
+
+		<!--Contact-->
+		<div id="contact2" class="show hide">
+			<p>Email: support@startlet.help<p>
+			<p>Telegram: @startletHelp</p>
+			<p>Skype: startlet.help</p>
+		</div>
+
+		<!-- Search result -->
+		<div id="result3" class="show hide">
+			<ul id="result">
+
+			</ul>
+		</div>
+
+	</div>
+	<button id="chat_knp" class="chat_btn">Chat</button>
+	</main>
+	<footer>
+		<div class="foot">
+			<div class="left" onclick="location.replace('about.html')">
+				About
+			</div>
+	
+			<div class="middle">
+				<div class="middle2">
+					<a href="" class="fa fa-facebook"></a>
+					<a href="" class="fa fa-instagram"></a>
+					<a href="" class="fa fa-twitter"></a>
+				</div>
+				<p class="cc">Copyright © 2020, STARTLET All Rights Reserved. </p>
+			</div>
+	
+			<div class="right" onclick="location.replace('Help.html')">
+				Help
+			</div>
+		</div>
+	</footer>
+	
+	</body>
+</html>

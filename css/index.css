@@ -1,0 +1,448 @@
+* {
+    box-sizing: border-box
+}
+
+/* DENNE FONT-FAMILY I BODY, MÅ DU (BØR DU) HA PÅ SÅ SI ALLE SIDENE DINE */
+body {
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+    margin: 0;
+}
+
+
+/* MATS LA TIL DISSE KNAPPENE SOM ER UNDER SLIDESHOWET PÅ INDEX.HTML */
+.whitebtn {
+    border: 2px solid #759ECD;
+    background-color: white;
+    border-radius: 2rem;
+    font-size: 1.5vw;
+    padding: 6px;
+    width: 200px;
+    margin: 6px;  
+    text-decoration: none;
+    color: #759ECD;
+}
+.whitebtn:hover { 
+    color: white; 
+    background-color: #759ECD;
+    transition: 0.3s;
+}
+
+.bluebtn {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    border: 2px solid #759ECD;
+    background-color: #759ECD;
+    border-radius: 2rem;
+    padding: 6px;
+    width: 200px;
+    margin: 6px;
+}
+.bluebtn:hover { 
+    background-color: white;
+    color: #759ECD;
+    transition: 0.3s; 
+}
+
+
+/* SLIDESHOW */
+        slider {
+            display: block;
+            width: 100%;
+            height: 60%;
+            background-color: #1f1f1f;
+            overflow: hidden;
+            position: absolute;
+        }       
+
+        slider > * {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: #1f1f1f;
+            animation: slide 12s infinite;
+            overflow: hidden; 
+        }       
+
+        slide:nth-child(1) {
+            left: 0%;
+            animation-delay: -1s;
+            background-image: url(../assets/peach.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        slide:nth-child(2) {
+            left: 100%;
+            animation-delay: 2s;
+            background-image: url(../assets/sea.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        slide:nth-child(3) {
+            left: 100%;
+            animation-delay: 5s;
+            background-image: url(../assets/wood.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        slide:nth-child(4) {
+            left: 100%;
+            animation-delay: 8s;
+            background-image: url(../assets/leaf.jpg);
+            background-size: cover;
+            background-position: center;
+        }       
+
+        slide p {
+            font-size: 60px;
+            text-align: center;
+            display: inline-block;
+            font-weight: 600;
+            width: 100%;
+            margin-top: 140px;
+            color: white;
+            text-shadow: 2px 2px black;
+        }    
+
+        @keyframes slide {
+            0% { left: 100%; width: 100%; }
+            5% { left: 0%; }
+            25% { left: 0%; }
+            30% { left: -100%; width: 100%; }
+            30.0001% { left: -100%; width: 0%; }
+            100% { left: 100%; width: 0%; }
+        }
+
+/* 3 Buttons */
+.boxcontainer {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    top: 65%;
+    left: 25%;
+    position: absolute;
+    text-align: center;
+}
+.box {
+    border: 2px solid black;
+    background-color: #759ECD;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+.box a {
+    text-decoration: none;
+    color: black;
+}
+.box li {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    font-weight: 500;
+    padding: 12px;
+}
+
+
+/* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+    /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+    /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+    /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+    /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+    /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+    /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+    /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev,
+            .next,
+            .text {
+                font-size: 11px;
+            }
+        }
+
+/* TOPBAREN PÅ (NESTEN) ALLE SIDENE */
+    .bars {
+        font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+        z-index: 3;
+        background-color: white;
+        height: 30px;
+        color: #759ECD;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        box-shadow: 1px 5px 5px lightgray;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding: 4em;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+    .bars .left {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .bars .right {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .title_head a {
+        text-decoration: none;
+        color: #759ECD;
+    }
+    /* MOBIL-SKALERINGER */
+        @media only screen and (max-width: 641px) {
+            .bars {
+                height: 10px;
+                font-size: 5px;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .bars {
+                height: 19px;
+                font-size: 16px;
+            }
+            .title_head {
+                font-size: 20px;
+            }
+        }
+
+/* CHAT BUTTON */
+    .chat_btn {
+      color: white;
+      background-color: #FD5959;
+      border: 1px solid white;
+      border-radius: 2rem;
+      width: 90px;
+      height: 30px;
+      font-size: 18px;
+      cursor: pointer;
+      position: fixed;
+      bottom: 110px;
+      right: 15px;
+    }
+    .chat_btn a {
+        text-decoration: none;
+        color: white;
+    }
+
+/* FOOTER */
+    .foot {
+        background-color: #3A3A3A;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        box-shadow: 0px 0px 15px grey;
+        height: 95px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+    }
+    .foot .left {
+        font-weight: bold;
+        margin: 1em;
+        margin-left: 400px;
+        color: white;
+        float: left;
+    }
+    .foot .left a {
+        text-decoration: none;
+        color: white;
+    }
+    .foot .middle {
+        flex: 1;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .foot .middle a {
+        text-decoration: none;
+        /* color: white; */
+        font-weight: 500;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 50px;
+    }
+    .foot .right {
+        font-weight: bold;
+        margin: 1em;
+        margin-right: 400px;
+        float: right;
+        color: white;
+    }
+    .foot .right a {
+        text-decoration: none;
+        color: white;
+    }
+    .cc {
+        font-size: 15px; 
+        color: white; 
+        text-align: center;
+    }
+
+    .fa-facebook {color: #3B5998;}
+    .fa-instagram {color: #E1306C;}
+    .fa-twitter {color: #55ACEE;}
+
+    @media only screen and (max-width: 1400px) {
+        .foot .right {margin-right: 100px;}
+        .foot .left {margin-left: 100px;}
+        .foot .cc {font-size: 10px;}
+    }
+    @media only screen and (max-width: 641px) {
+        .foot .right {
+            margin-right: 30px;
+            font-size: 15px;
+        }
+        .foot .left {
+            margin-left: 30px;
+            font-size: 15px;
+        }
+        .foot .middle a {
+            font-size: 15px;
+            letter-spacing: 30px;
+        }
+    }
+
+/* BURGER-MENY-KODE */
+.burgers {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #A6CDE5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 155px;
+}
+.burgers a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.burgers a:hover {
+    color: lightgray;
+}
+.burgers .closeBtn {
+    position: absolute;
+    top: 20;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.closeBtn {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+.burger_icon {
+    font-size: 30px; 
+    cursor: pointer;
+}

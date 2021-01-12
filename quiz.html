@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startlet</title>
+
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="top" style="width: 100%;">
+        <div id="bar" class="bars">
+            <div class="left">
+                <h2 class="title_head" onclick="exitQuiz()">Startlet</h2>
+            </div>
+            
+            <div class="right">
+                <button onclick="exitQuiz()" id="exit_knp" class="signUpBtn" style="background-color: #E35333;">Exit quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <form id="quiz2">
+        <div id="spm1">
+            <div class="questionDiv" id="spmDiv">
+                <h2 class="question">How many startups fail (bankruptcy, closedown, inactive</h2>
+            </div>
+            <br><br><br>
+
+            <div class="awnserDivs">
+                <div class="row1">
+                    <button onclick="wrong()" class="awnser">30%</button>
+                    <button onclick="wrong()" class="awnser">50%</button>
+                </div>
+                <br>
+                <div class="row2">
+                    <button onclick="wrong()" class="awnser">70%</button>
+                    <button onclick="correct()" class="awnser">90%</button>
+                </div>
+            </div>
+        </div>
+
+
+    <div id="spm2" style="display: none;">
+        <div class="questionDiv" id="spmDiv2">
+            <h2 class="question">What are the major reason for startups failure in their early-stage</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="correct()" class="awnser">Develop a product nobody wants</button>
+                <button onclick="wrong()" class="awnser">Running out of cash</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="wrong()" class="awnser">Conflicts among founders</button>
+                <button onclick="wrong()" class="awnser">Lack of business insight</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm3" style="display: none;">
+        <div class="questionDiv" id="spmDiv3">
+            <h2 class="question">How many startups are profitable in a short/mid-term?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="wrong()" class="awnser">20%</button>
+                <button onclick="correct()" class="awnser">40%</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="wrong()" class="awnser">60%</button>
+                <button onclick="wrong()" class="awnser">80%</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm4" style="display: none;">
+        <div class="questionDiv" id="spmDiv4">
+            <h2 class="question">How is startup doing with initial capital?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="correct()" class="awnser">33% of startup capital for employer firms is less than $10 000 in the early-stage</button>
+                <button onclick="wrong()" class="awnser">Startups often acquire a lot of money in the beginning</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="wrong()" class="awnser">Startups acquire initial capital mainly from angle investors</button>
+                <button onclick="wrong()" class="awnser">50% of startups have initial capital more than $100000 in the early-stage</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm5" style="display: none;">
+        <div class="questionDiv" id="spmDiv5">
+            <h2 class="question">The portion of startups turning to unicorns?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="wrong()" class="awnser">0.01%</button>
+                <button onclick="wrong()" class="awnser">0.1%</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="correct()" class="awnser">1%</button>
+                <button onclick="wrong()" class="awnser">10%</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm6" style="display: none;">
+        <div class="questionDiv" id="spmDiv6">
+            <h2 class="question">How long does it take to hire someone for a startup?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="wrong()" class="awnser">1 week</button>
+                <button onclick="wrong()" class="awnser">1 month</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="correct()" class="awnser">6 months</button>
+                <button onclick="wrong()" class="awnser">1 year</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm7" style="display: none;">
+        <div class="questionDiv" id="spmDiv7">
+            <h2 class="question">How do CEO spend their time on their business</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="wrong()" class="awnser">Startup CEOs spend most of their time to hire the right people</button>
+                <button onclick="correct()" class="awnser">Startup CEOs can spend around 40% of their working hours on tasks that do not generate income such as hiring, HR tasks and payroll</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="wrong()" class="awnser">CEOs of a software startup should be a good developer</button>
+                <button onclick="wrong()" class="awnser">CEOs should spend 50% on business activities and 50% on technical activities</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm8" style="display: none;">
+        <div class="questionDiv" id="spmDiv8">
+            <h2 class="question">How many co-founders do you need for your startups?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="correct()" class="awnser">“Zero” – You don’t need a cofounder</button>
+                <button onclick="correct()" class="awnser">“One” – You have to have a cofounder</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="correct()" class="awnser">“Two” – You have to have three founders</button>
+                <button onclick="wrong()" class="awnser">“Three or more” – the more the merrier</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm9" style="display: none;">
+        <div class="questionDiv" id="spmDiv9">
+            <h2 class="question">What makes a successful startup team?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="wrong()" class="awnser">The most important success factor is “technical stars”</button>
+                <button onclick="wrong()" class="awnser">Prior startup experience, product knowledge, and industry skills are all needed for a successful startup</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="correct()" class="awnser">Shared entrepreneurial passion and shared strategic vision are required to get to superior team performance</button>
+                <button onclick="wrong()" class="awnser">Technical skills are more important than teamwork</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm10" style="display: none;">
+        <div class="questionDiv" id="spmDiv10">
+            <h2 class="question">The Average Age of a US Successful Startup Founder according to statistic?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="wrong()" class="awnser">25</button>
+                <button onclick="wrong()" class="awnser">37</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="correct()" class="awnser">42</button>
+                <button onclick="wrong()" class="awnser">51</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm11" style="display: none;">
+        <div class="questionDiv" id="spmDiv11">
+            <h2 class="question">What is true about startup learning?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="wrong()" class="awnser">Take an entrepreneurial course</button>
+                <button onclick="wrong()" class="awnser">Read books written by successful entrepreneurs</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="correct()" class="awnser">Start a company with awareness of available tools and methods in hand</button>
+                <button onclick="wrong()" class="awnser">Work for a high flying startup</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm12" style="display: none;">
+        <div class="questionDiv" id="spmDiv12">
+            <h2 class="question">What is among the biggest factor impacting the time needed to raise capital for your startups?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="correct()" class="awnser">The time of year when you pitch</button>
+                <button onclick="wrong()" class="awnser">The number of cofounders in your team</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="wrong()" class="awnser">The application domain of your product</button>
+                <button onclick="correct()" class="awnser">The appetite for startup investment</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm13" style="display: none;">
+        <div class="questionDiv" id="spmDiv13">
+            <h2 class="question">What does it mean to create a Minimum Viable Product (MVP)?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="wrong()" class="awnser">Making a running prototype of your software with some frontend/ backend in place</button>
+                <button onclick="correct()" class="awnser">Using different approaches to demonstrate how your future product can satisfy a customers/ fit to a market</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="wrong()" class="awnser">MVP is used barely for testing an idea</button>
+                <button onclick="wrong()" class="awnser">Creating MVPs do not need quality in place</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm14" style="display: none;">
+        <div class="questionDiv" id="spmDiv">
+            <h2 class="question">How you should build confidence on your startup?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="wrong()" class="awnser">Invest on the idea you strongly believe</button>
+                <button onclick="correct()" class="awnser">Forming hypotheses about your products, collecting data to support/ reject it</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="wrong()" class="awnser">Getting positive feedback from your family and friends</button>
+                <button onclick="wrong()" class="awnser">Get the first dollar paid in your product</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm15" style="display: none;">
+        <div class="questionDiv" id="spmDiv">
+            <h2 class="question">What does Crossing the Chasm mean in a startup journey?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="wrong()" class="awnser">Marketing a new product should be done as early as possible in your startup</button>
+                <button onclick="correct()" class="awnser">The most important gap is the one between early adopters and the rest of the market</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="wrong()" class="awnser">Chasm is not a challenge for many startups</button>
+                <button onclick="wrong()" class="awnser">Marketing should aim at a broad range of customers</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm16" style="display: none;">
+        <div class="questionDiv" id="spmDiv">
+            <h2 class="question">What does Customer development mean to you?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="correct()" class="awnser">There Are No Facts Inside Your Building, So Get Outside</button>
+                <button onclick="correct()" class="awnser">Failure is an Integral Part of the Search For Right Customers</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="correct()" class="awnser">Design Experiments and Test to Validate Your Hypothesis</button>
+                <button onclick="correct()" class="awnser">Startup Job Titles Are Very Different from a Large Company's</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm17" style="display: none;">
+        <div class="questionDiv" id="spmDiv">
+            <h2 class="question">What do you know about startup pivot?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="correct()" class="awnser">A pivot is a shift in business strategy to test a new approach or product after receiving feedback</button>
+                <button onclick="correct()" class="awnser">We’ve got a great name. We’ve got a great team. Now we just need an idea. Let’s pivot</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="wrong()" class="awnser">Pivot can be interpreted as a startup failure</button>
+                <button onclick="correct()" class="awnser">Changing a mobile app from iOS-based to Android-based can also considered as a pivot</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm18" style="display: none;">
+        <div class="questionDiv" id="spmDiv">
+            <h2 class="question">What do you know about technical debt in software startups?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="correct()" class="awnser">Technical debt reflects the implied cost of additional rework caused by choosing an easy solution in an urgent demand instead of using a better approach that would take longer</button>
+                <button onclick="wrong()" class="awnser">Like your debt in banks, if you do not pay your debt it is a bad thing</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="correct()" class="awnser">In startups, accumulated technical debt in early stages will hinder product performance in later stages</button>
+                <button onclick="wrong()" class="awnser">In startup context, focusing on speed is the only reason leading to accumulated debts</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="spm19" style="display: none;">
+        <div class="questionDiv" id="spmDiv">
+            <h2 class="question">Revenue models in startups?</h2>
+        </div>
+        <br><br><br>
+
+        <div class="awnserDivs">
+            <div class="row1">
+                <button onclick="wrong()" class="awnser">Ad-based revenue model is an easy way of making money without harms</button>
+                <button onclick="wrong()" class="awnser">You can start in the beginning by collecting transaction fee on using your products or services.</button>
+            </div>
+            <br>
+            <div class="row2">
+                <button onclick="correct()" class="awnser">You can start in the beginning by collecting transaction fee on using your products or services.</button>
+                <button onclick="wrong()" class="awnser">Freemium model does not generate revenue for your startups in early phases</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+    <form id="quiz">
+        <div id="spm20" style="display: none;">
+            <div class="questionDiv" id="spmDiv">
+                <h2 class="question">You want to test the User Interface of your new product. How many test user is sufficient ?</h2>
+            </div>
+            <br><br><br>
+
+            <div class="awnserDivs">
+                <div class="row1">
+                    <button onclick="wrong()" class="awnser">2</button>
+                    <button onclick="correct()" class="awnser">5</button>
+                </div>
+                <br>
+                <div class="row2">
+                    <button onclick="wrong()" class="awnser">10</button>
+                    <button onclick="wrong()" class="awnser">As many as possible in a given timeframe</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <p class="indication" id="indikasjon"></p>
+
+
+    <!-- HUSKELAPP TIL MATS: HUSK AT DU LAGDE EN FUNGERENDE LOADER TIL MAN VAR FERDIG MED QUIZEN -->
+    <!-- NB HAR BARE LAGT INN AT DET SKAL LOADE PÅ DET SPPØRSMÅLET SOM ER RIKTIG -->
+    <div class="loader" id="laster" style="display: none;"></div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

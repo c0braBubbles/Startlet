@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Startlet</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/mainStyle.css">
+		<link rel="stylesheet" href="css/topBar.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script src="js/action.js" defer></script>
+		<script src="js/clicks.js" defer></script>
+		<script src="js/darkMode.js" defer></script>
+
+	</head>
+	<body>
+		
+		<!--
+			Every place where the "show" class is follwed by space and no more classes, 
+			the space need to be there for the script to work with menus and click events.
+			The class "click" is also used to get clicks script to function.
+		-->
+
+		<!--General header-->
+		<div class="top">
+			<div id="bar" class="bars">
+				<div class="left">
+					<h2 id="hTittel" class="title_head" onclick="window.location.href='main.html'">Startlet</h2>
+				</div>
+				<div class="right">
+					<span id="burgerIkon" class="burger_icon" onclick="openBurger()">&#9776;</span>
+                	<a href="javascript:void(0)" id="lukkeMuskelaturen" class="closeBtn" onclick="closeburger()">&times;</a>
+				</div>
+			</div>
+
+			<div id="burgers" class="burgers">
+				<a href="about.html">About</a>
+				<a href="articlelist.html">Article list</a>
+				<a href="toollist.html">Tool list</a>
+				<a href="help.html">Help</a>
+				<a href="#">Settings</a>
+			</div>
+		</div>
+
+	<!-- Main -->
+	<main>
+		<div class="settingsMenu-wrapp">
+			<div class="settingsMenu">
+				<div id="generalsettings-1" class="click"  onclick="show(this)">
+				<!--Genaral settings clickable icon-->
+					
+					<img id="imgOne"  src="assets/light/appbar.cog.png" alt="Clickable icon general settings">
+				
+				</div>
+				<div id="usersettings-2" class="click" onclick="show(this)">
+					<!--Personal settings clickable icon-->
+					<img id="imgeTwo" src="assets/light/appbar.people.png"  alt="Clickable icon personal settings" >
+				</div>
+			</div>
+		</div>
+
+		<div id="main_content" class="content">
+			<!--Genral settings-->
+			<div id="generalsettings1" class="show ">
+				<div class="dark_mode_taogle">
+					<i class="text">Darkmode</i>
+					<div class="float_right">
+						<label class="theme-switch" for="checkbox">
+							<input type="checkbox" id="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div>
+				</div>
+				<div>
+					<div>
+						<i class="text_head">Sound</i>
+					</div>
+					<div>
+						<i class="text">Effects</i>
+					</div>
+					<div>
+						<i class="text">Volum</i>
+					</div>
+				</div>
+				<div>
+					<div>
+						<i class="text_head">Notifications</i>
+					</div>
+					<div>
+						<i class="text">Push Notifications</i>
+					</div>
+				</div>
+				<div>
+					<div>
+						<i class="text_head">Version</i>
+					</div>
+					<div>
+						<i class="text">0.1.x.x</i>
+					</div>
+				</div>
+				
+				<div>
+					<a href="Help.html"><i class="text">FaQ</i></a>
+				</div>
+			</div>
+			<!--User Settings-->
+			<div id="usersettings2" class="show hide">
+				<div>
+					<i class="text">Change Email</i>
+				</div>
+				<div>
+					<i class="text">Change Pasword</i>
+				</div>
+			</div>
+		</div>
+		<button id="chat_knp" class="chat_btn">Chat</button>
+	</main>
+	
+	<footer>
+		<div class="foot">
+			<div class="left" onclick="location.replace('about.html')">
+				About
+			</div>
+	
+			<div class="middle">
+				<div class="middle2">
+					<a href="" class="fa fa-facebook"></a>
+					<a href="" class="fa fa-instagram"></a>
+					<a href="" class="fa fa-twitter"></a>
+				</div>
+				<p class="cc">Copyright © 2020, STARTLET All Rights Reserved. </p>
+			</div>
+	
+			<div class="right" onclick="location.replace('Help.html')">
+				Help
+			</div>
+		</div>
+	</footer>
+	</body>	
+</html>

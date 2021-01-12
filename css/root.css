@@ -1,0 +1,21 @@
+:root {
+  
+    --button-active-fill-color: darkblue;
+    --button-hover-font-color: blanchedalmond;
+    --burgers-hover-color: blanchedalmond;
+    --topbar-burgers-backround-color: #A6CDE5;
+    --topbar-burgers-font-color: white;
+    --topbar-backround: white;
+    --header-backround: #759ECD;
+    --button-fill-color: #759ECD;
+    --button-border-color: white;
+    --button-font-color: white;
+    --header-shadow-color: gray;
+    --body-backround-color: white;
+    --border-icon-arrow: 1px solid rgb(28, 29, 28);
+    --border-content: 1px solid rgb(28, 29, 28);
+    --font-color: black;
+    /* --topbar-font-color: #A6CDE5; */
+    --topbar-font-color: #759ECD;
+    --header-font-color: white;  
+}

@@ -1,0 +1,208 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    background-color: #282828;
+    margin: 0 0 100px;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+}
+/* Chat-btn på chatBtn.html */
+.chat_btn {
+    color: white;
+    background-color: #FD5959;
+    border: 1px solid white;
+    border-radius: 2rem;
+    width: 90px;
+    height: 30px;
+    font-size: 18px;
+
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+}
+
+
+/* BURGER-MENY-KODE */
+.burgers {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #282828;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 155px;
+}
+.burgers a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.burgers a:hover {
+    color: lightgray;
+}
+/*.burgers .closeBtn {
+    position: absolute;
+    top: 20;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}*/
+.closeBtn {
+    /* position: absolute; */
+    text-decoration: none;
+    color: #FF5A5A;
+    /* top: 20; */
+    /* right: 25px; */
+    font-size: 40px;
+    /* margin-left: 50px; */
+    display: none;
+}
+.burger_icon {
+    font-size: 30px; 
+    cursor: pointer;
+}
+
+
+/* TOPBAREN PÅ (NESTEN) ALLE SIDENE */
+.bars {
+    z-index: 3;
+    background-color: #3A3A3A;
+    height: 30px;
+    color: #FF5A5A;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 1px 1px 5px #000000;
+
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 4em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+.bars .left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+.bars .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/* "SKRIVE MELDING" SEKSJONEN */
+.text_bar {
+    background-color: #282828;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px 0px 15px #000000;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.btn_white {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+    /* margin: 25px; */
+    /* Margin må endres når skjermbredde endrer seg */
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #FF5A5A;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px #282828;
+}
+.btn_white:hover {background-color: whitesmoke;}
+.btn_white:active {
+    background-color: lightgray;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.middle2 {
+    margin: auto;
+    height: auto;
+}
+.inpTxt {
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+    border-radius: 2rem;
+    border: none;
+    padding: 5px;
+    width: 50vw;
+    height: 2vw;
+}
+
+
+/* BOBLE-SEKSJONEN */
+.vidMld {
+    position: relative;
+    /* top: 200px; */
+    bottom: 70px;
+}
+.container {
+    border: 1px solid #dedede;
+    background-color: #282828;
+    border-radius: 5px;
+    /* padding: 10px; */
+    margin: 10px 0;
+}
+.right {
+    float: right;
+    width: 60vw;
+}
+.left {
+    float: left;
+    width: 60vw;
+}
+.darker {
+    border-color: #ccc;
+    background-color: #757ECD;
+}
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* MOBIL-SKALERINGER */
+@media only screen and (max-width: 641px) {
+    .btn_white {font-size: 10px;}
+    .text_bar {height: 50px;}
+    .bars {
+        height: 16px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .btn_white {font-size: 15px;}
+    .text_bar {height: 60px;}
+    .bars {
+        height: 19px;
+        font-size: 16px;
+    }
+}

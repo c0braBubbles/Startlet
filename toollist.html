@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/topBar.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tool list</title>
+    
+    
+    <script src="js/action.js" defer></script>
+    <script src="js/darkMode.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top" style="width: 100%;">
+            <div id="bar" class="bars">
+                <div class="left">
+                    <h2 class="title_head" onclick="window.location.href='index.html'">Startlet</h2>
+                </div>
+                <div class="right">
+                    <span id="burgerIkon" class="burger_icon" onclick="openBurger()">&#9776;</span>
+                    <a href="javascript:void(0)" id="lukkeMuskelaturen" class="closeBtn" onclick="closeburger()">&times;</a>
+                </div>
+            </div>
+            
+            <div id="burgers" class="burgers">
+                <a href="about.html">About</a>
+                <a href="articlelist.html">Article list</a>
+                <a href="toollist.html">Tool list</a>
+                <a href="help.html">Help</a>
+                <a href="settings.html">Settings</a>
+            </div>
+        </div>
+
+        <!-- Specefic header -->
+        <div class="header_help">
+            <i class="header_heading">Tool list</i>
+            <p class="header_text"> 
+                Find tools that wil propell
+                <br> you to the next level, 
+                <br> its all about the tools
+            </p>
+        </div>
+    </header>
+
+    <div class="innhold3">
+
+        <article class="artclbtn" onclick="window.open('//trello.com', '_blank')">
+            <h3>Trello</h3>
+            <p>Trello let you cooperate, so you get more done</p>
+            <img src="assets/toolList/trello.svg" alt="Trello">
+        </article>
+        <article class="artclbtn" onclick="window.open('//monday.com', '_blank')">
+            <h3>Monday.com</h3>
+            <p>Together. In projects, processes, and success. Wherever you are</p>
+            <img src="assets/toolList/monday-logo-x2.png" alt="Monday.com" style="max-width: 50%">
+        </article>
+        <article class="artclbtn" onclick="window.open('//slack.com', '_blank')">
+            <h3>Slack</h3>
+            <p>Slack brings the team together, wherever you are</p>
+            <img src="assets/toolList/slack.svg" alt="Slack" style="max-width: 30%;">
+        </article>                     
+    </div>
+
+    <button id="chat_knp" class="chat_btn">Chat</button>
+
+
+
+    <div class="foot">
+        <div class="left" onclick="location.replace('about.html')">
+            About
+        </div>
+
+        <div class="middle">
+            <div class="middle2">
+                <a href="" class="fa fa-facebook"></a>
+                <a href="" class="fa fa-instagram"></a>
+                <a href="" class="fa fa-twitter"></a>
+            </div>
+            <p class="cc">Copyright © 2020, STARTLET All Rights Reserved. </p>
+        </div>
+
+
+        <div class="right" onclick="location.replace('Help.html')">
+           Help
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+@import url(root.css);
+:root[data-theme=dark] {
+  
+    --button-active-fill-color: darkred;
+    --button-hover-font-color: blanchedalmond;
+    --burgers-hover-color: blanchedalmond;
+    --topbar-burgers-backround-color: #E1306C;
+    --topbar-burger-font-color: white;
+    --topbar-backround: black;
+    --header-backround: #E1306C;
+    --button-fill-color:rgba(225, 48, 107, 0.836);
+    --button-border-color: #E1306C;
+    --button-font-color: white;
+    --header-shadow-color: gray;
+    --body-backround-color: rgb(41, 41, 41);
+    --border-icon-arrow: 1px solid #E1306C;
+    --border-content: 2px solid #E1306C;
+    --font-color: white;
+    --topbar-font-color: #E1306C;
+    --header-font-color: white;
+    --img-meny: url("https://pineconedownload.azurewebsites.net/assets/dark/appbar.cog.png");
+    --img2-meny: url("https://pineconedownload.azurewebsites.net/assets/dark/appbar.people.png");
+    
+  }
+
+
+  html, body {
+    height: 100%;
+    background-color: var(--body-backround-color);
+    color: var(--font-color);
+  }
+
+
+@media (prefers-color-scheme: dark) {
+
+  
+  
+    :root {
+      --button-active-fill-color: darkred;
+      --button-hover-font-color: blanchedalmond;
+      --burgers-hover-color: blanchedalmond;
+      --topbar-burgers-backround-color: #E1306C;
+      --topbar-burger-font-color: white;
+      --topbar-backround: black;
+      --header-backround: #E1306C;
+      --button-fill-color:rgba(225, 48, 107, 0.836);
+      --button-border-color: #E1306C;
+      --button-font-color: white;
+      --header-shadow-color: gray;
+      --body-backround-color: rgb(41, 41, 41);
+      --border-icon-arrow: 1px solid #E1306C;
+      --border-content: 2px solid #E1306C;
+      --font-color: white;
+      --topbar-font-color: #E1306C;
+      --header-font-color: white;
+      --img-meny: url('https://pineconedownload.azurewebsites.net/assets/dark/appbar.cog.png');
+      --img2-meny: url('https://pineconedownload.azurewebsites.net/assets/dark/appbar.people.png');
+    }
+  
+  }

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startlet</title>
+
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/quizScore.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="top" style="width: 100%;">
+        <div id="bar" class="bars">
+            <div class="left">
+                <h2 class="title_head" onclick="exit()">Startlet</h2>
+            </div>
+            
+            <div class="right">
+                <button id="exit_knp" class="signUpBtn" style="background-color: #E35333; border: 1px solid #E35333;" onclick="exit()">Finish quiz</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="result">
+        <h2 id="resultat" class="question" style="text-decoration: underline;">You scored 10/10</h2>
+        <p id="resultatTxt" class="awnserTxt"></p>
+    </div>
+
+
+    <div id="spm1" class="questionDiv">
+        <h2 class="question">1. How many startups fail (bankruptcy, closedown, inactive</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            There are different statistics about startup failure. But the common number is that nine out of ten new startups fail
+            Read more <a href="https://www.forbes.com/sites/neilpatel/2015/01/16/90-of-startups-will-fail-heres-what-you-need-to-know-about-the-10/#6f2fa9bd6679">forbes.com</a>
+        </p>
+    </div>
+
+
+    <div id="spm2" class="questionDiv">
+        <h2 class="question">2. What are the major reason for startups failure in their early-stage?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            One of the largest waste in startups is to develop products that nobody finds useful. It’s because 
+            we’re usually designing for our idea of people, rather than people themselves. Read more at
+            <a href="https://arxiv.org/abs/1709.04749">arxiv.org</a>
+        </p>
+    </div>
+
+
+    <div id="spm3" class="questionDiv">
+        <h2 class="question">3. How many startups are profitable in a short/mid-term?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            Only 2 in 5 startups are profitable, and other startups will either break even (1 in 3) 
+            or continue to lose money (1 in 3). Read more at <a href="https://www.embroker.com/blog/startup-statistics#ss-2">embroker.com</a>
+        </p>
+    </div>
+
+
+    <div id="spm4" class="questionDiv">
+        <h2 class="question">4.	How is startup doing with initial capital?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            33% of startup capital for employer firms is less than $10,000 in the early-stage
+            Read more at <a href="https://www.sba.gov/sites/default/files/Capital_Access_Fact_Sheet_FINAL.pdf">office of advocasy</a>
+        </p>
+    </div>
+
+
+    <div id="spm5" class="questionDiv">
+        <h2 class="question">5.	The portion of startups turning to unicorns?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            About 1% of startups evolve into a unicorn startup, like Uber, Airbnb, Slack, Stripe, and Docker.
+            Read more at <a href="https://www.statista.com/statistics/893437/china-leading-unicorn-companies-based-on-valuation/">statista.com</a>
+        </p>
+    </div>
+
+
+    <div id="spm6" class="questionDiv">
+        <h2 class="question">6.	How long does it take to hire someone for a startup?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            Team dynamics are central to the success or failure of a startup. Great startup team members can be 
+            found in unusual places because they are less likely to be looking for a standard career path. 
+        </p>
+    </div>
+
+
+    <div id="spm7" class="questionDiv">
+        <h2 class="question">7.	How do CEOs spend their time on their business?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            The difference between some of the best CEOs and the mediocre ones are not necessarily that they 
+            do different activities, but rather they do them in different proportions. Startup CEOs can spend 
+            around 40% of their working hours on tasks that do not generate income such as hiring, HR tasks, 
+            and payroll. Read more at <a href="https://blog.cardash.com/how-startup-ceos-spend-their-time-769148c1a705">cardash.com</a> the blog. 
+        </p>
+    </div>
+
+
+    <div id="spm8" class="questionDiv">
+        <h2 class="question">8.	How many co-founders do you need for your startups?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            Two founders increase the odds of a startup’s success with 30% more investment, three times the 
+            customer growth rate, and a higher likelihood the startup will not scale too fast. VCs don’t fund 
+            sole founders and, if you are alone, you’ve either got too much ego or you can’t convince someone 
+            to join you. Decisions need to be made fast in startups and you have to ensure you can have a tie-breaker.
+            Read more at <a href="https://thenextweb.com/entrepreneur/2013/10/10/how-many-cofounders-does-your-startup-need/">"The Next Web"</a>
+        </p>
+    </div>
+
+
+    <div id="spm9" class="questionDiv">
+        <h2 class="question">9.	What makes a successful startup team?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            Greater team experience only leads to better performance if team members share a strategic vision 
+            for the company. Thus, when team members don’t agree on the future strategy of the firm, the knowledge 
+            and skills they have will only marginally contribute to team performance. Read more at 
+            <a href="https://hbr.org/2019/03/what-makes-a-successful-startup-team">hbr.org</a>
+        </p>
+    </div>
+
+
+    <div id="spm10" class="questionDiv">
+        <h2 class="question">10. The Average Age of a US Successful Startup Founder according to statistic?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            It’s widely believed that the most successful entrepreneurs are young. However, according to an 
+            analysis of confidential administrative data sets from the U.S. Census Bureau, the average age 
+            of entrepreneurs at the time they founded their companies is 42. In software startups, the average 
+            age is 40, and younger founders aren’t uncommon. However, young people are less common in other industries 
+            such as oil and gas or biotechnology, where the average age is closer to 47. Read more at 
+            <a href="https://hbr.org/2018/07/research-the-average-age-of-a-successful-startup-founder-is-45">hbr.org</a>
+        </p>
+    </div>
+
+
+    <div id="spm11" class="questionDiv">
+        <h2 class="question">11. What is true about startup learning?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            Preponderance of people believe that the best way to learn more about entrepreneurship is to start 
+            a company. Could the high failure rate in entrepreneurship be explained by the belief that the best 
+            way to learn entrepreneurship is through trial-and-error? Read more at 
+            <a href="https://smallbiztrends.com/2015/06/learning-by-doing-entrepreneurship.html">small blitz trends</a>
+        </p>
+    </div>
+
+
+    <div id="spm12" class="questionDiv">
+        <h2 class="question">12. What is among the biggest factor impacting the time needed to raise capital for your startups?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            The time of year you are raising is the most important factor. Besides, you also the strength and 
+            depth of your data, the quality of your pitch, the strength of your relationship with investors, the 
+            due diligence, your locations, market trends, availability of capital and appetite for startup investments. 
+            Read more at <a href="https://www.forbes.com/sites/alejandrocremades/2019/01/03/how-long-it-takes-to-raise-capital-for-a-startup/#7bbf240c7a41">forbes.com</a>
+        </p>
+    </div>
+
+
+    <div id="spm13" class="questionDiv">
+        <h2 class="question">13. What does it mean to create a Minimum Viable Product (MVP)?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            Every startup should start with building a Minimum viable product (MVP), and use it to validate their 
+            hypotheses about customer needs. An MVP can be simply a landing page, a mockup by Adobe XD or a simple 
+            mobile app with a single feature. MVP is created for multiple purposes, including communication and fund 
+            raising. MVP focuses on speed, but it does not mean ignoring key quality attribute and throwing garbage to 
+            customers. Read more at <a href="https://link.springer.com/chapter/10.1007/978-3-319-33515-5_10">Springer Link</a>
+        </p>
+    </div>
+
+
+    <div id="spm14" class="questionDiv">
+        <h2 class="question">14. How you should build confidence on your startup?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            Why all of the options are reasonably acceptable, we would focus on the ability of forming hypotheses 
+            and the journey of validating them. It is done via a Build-Measure-Learn loop. Read more at 
+            <a href="http://theleanstartup.com/principles">The lean startup's principles</a>
+        </p>
+    </div>
+
+
+    <div id="spm15" class="questionDiv">
+        <h2 class="question">15. What does Crossing the Chasm mean in a startup journey?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            Technology adoption journey starts with innovators, early adopters, early majority, then late 
+            majority and finally laggards. Marketing should focus on one group of customers at a time, using 
+            each group as a base for marketing to the next group. The most difficult step is making the transition 
+            between visionaries (early adopters) and pragmatists (early majority). Read more at 
+            <a href="https://www.businessinsider.com/crossing-the-chasm-is-a-major-startup-challenge-2012-12?r=US&IR=T">"Business Insider"</a>
+        </p>
+    </div>
+
+
+    <div id="spm16" class="questionDiv">
+        <h2 class="question">16. What does Customer development mean to you?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            Startups are not simply smaller versions of larger, more developed companies. While larger companies 
+            execute known and proven business strategies, startups must search for new business models. Customer 
+            Development guides the search for a repeatable and scalable business model. Read more at 
+            <a href="https://steveblank.com/2009/08/31/the-customer-development-manifesto-reasons-for-the-revolution-part-1/">steveblank.com</a>
+        </p>
+    </div>
+
+
+    <div id="spm17" class="questionDiv">
+        <h2 class="question">17. What do you know about startup pivot?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            A lot of successful startups launched with a different business model, and when they ran into 
+            trouble they pivoted to something new. A pivot is a shift in business strategy to test a new 
+            approach or product after receiving market feedback. There are different types of pivot according 
+            to changing product or market factors. Read more at <a href="https://arxiv.org/ftp/arxiv/papers/1710/1710.04037.pdf">arxiv.org</a>
+        </p>
+    </div>
+
+
+    <div id="spm18" class="questionDiv">
+        <h2 class="question">18. What do you know about technical debt in software startups?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            Technical debt describes a situation that developers sometimes produce a quick solution to an issue 
+            or a feature to meet an urgent demand in some other aspects (e.g., a deadline), and that leads to a 
+            “debt” on which “interest” has to be paid and which the “principal” should be repaid at some point for 
+            the long-term health of the project. Technical debt is not necessarily a bad thing, and sometimes 
+            (e.g., as a proof-of-concept) is required to move projects forward. In startup context, team competence, 
+            focusing on speed and lack of sufficient debt management can lead to a negative impact of technical debts.
+            Read more <a href="https://www.researchgate.net/publication/286376207_Software_Development_in_Startup_Companies_The_Greenfield_Startup_Model?enrichId=rgreq-bd05ef364a5fba52d8654f7204a36732-XXX&enrichSource=Y292ZXJQYWdlOzI4NjM3NjIwNztBUzo1NjQxNTAxMjQ2NjI3ODRAMTUxMTUxNTI3OTg2MA%3D%3D&el=1_x_3&_esc=publicationCoverPdf">here</a>
+        </p>
+    </div>
+
+
+    <div id="spm19" class="questionDiv">
+        <h2 class="question">19. Revenue models in startups?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            Ad-based revenue model entails creating ads for a specific website or product and placing them on 
+            your high-traffic websites or apps. In order to generate sufficient revenue to withhold a business, 
+            you will need to attract millions of users. In addition, most people find ads annoying, which can lead 
+            to low clickthrough rates, and therefore, lower revenue. In a transactional revenue model, consumers
+            are more attracted to this experience because of its simplicity and the wider set of options. However, 
+            many companies can employ this model, which leads to a price competition. The subscription model can 
+            generate recurring revenue, and can even benefit from customers who are simply too lazy to cancel their 
+            subscription to your company. However, it’s critical to maintain a higher subscribe rate than an unsubscribe 
+            rate. The freemium model is one in which a company’s basic services are free, yet users must pay for additional 
+            premium features, extensions, functions, etc. One of the biggest companies to use this model is Linkedin, the 
+            most popular business/social media platform. Read more at <a href="https://fi.co/insight/the-10-most-popular-startup-revenue-models">"Founder Institute"</a>
+        </p>
+    </div>
+
+
+    <div id="spm20" class="questionDiv">
+        <h2 class="question">20. You want to test the User Interface of your new product. How many test user is sufficient ?</h2>
+        
+        <br>
+
+        <p class="awnserTxt">
+            Testing with 5 people lets you find around 85% of usability problems you would detect with no limited 
+            number of test participants. More read <a href="https://www.nngroup.com/articles/how-many-test-users/">here</a>
+        </p>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="js/app2.js"></script>
+</body>
+</html>
